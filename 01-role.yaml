@@ -1,0 +1,11 @@
+
+# syntax https://kubernetes.io/docs/reference/access-authn-authz/rbac/ 
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: roboshop
+  name: roboshop-trainee
+rules:
+- apiGroups: [""] # "" indicates the core API group  see notes 
+  resources: ["pods"] # only give acccess for pods 
+  verbs: ["get", "watch", "list"]  # these are under ready only access 
