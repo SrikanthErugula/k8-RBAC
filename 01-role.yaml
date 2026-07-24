@@ -9,3 +9,5 @@ rules:
 - apiGroups: [""] # "" indicates the core API group  see notes 
   resources: ["pods"] # only give acccess for pods 
   verbs: ["get", "watch", "list"]  # these are under ready only access 
+
+  # final ga roboshop-trainee ane role ki only read access given, for PODS

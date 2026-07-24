@@ -7,6 +7,9 @@ data:
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
 
+# upto here EKS evairthe create chestaro vallaki get admin access. 
+
+
   mapUsers: |
     - groups:
       - roboshop-trainee
