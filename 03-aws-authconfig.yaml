@@ -33,3 +33,6 @@ metadata:
   name: aws-auth
   namespace: kube-system
   uid: 33956aae-bab6-40e4-af5b-8e3b202d922e
+
+  # this configuration will be changed every time, so we need to take latest one with below cmd
+  #kubectl get configmap aws-auth -n kube-system -o yaml  ----> to get latest configuration 
